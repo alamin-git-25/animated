@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.font-me{
+  font-family: "Jost", sans-serif;
+}
+.glass{
+  background: #00000062;
+  backdrop-filter: blur(10px);
+}
+.log::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:0%;
+  height: 100%;
+  background: linear-gradient(18deg, rgb(192 132 252),#a0c4ff);
+  z-index: -1;
+  transition: .5s ease-in;
+}
+.log:hover::after{
+  width: 100%;
+  transform: translateX(-100% -100%);
+}
+body{
+  overflow-x:hidden;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.img-me{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px, rgba(0, 0, 0, 0.5) 0px 0px 1px 0px;
+  border-radius: 10px;
+}
+.bg-custom{
+  background: url('../src/Pages/Home/milad-fakurian-mQzhWTqXPG4-unsplash.jpg');
+  /* background: url('./Pages/Home/jigar-panchal-EHsvDRl2iBM-unsplash.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card{
+  background: #00000073;
+  backdrop-filter: blur(10px);
+}
+.bg-sec{
+   background: url('../src/Pages/Home/milad-fakurian-mQzhWTqXPG4-unsplash.jpg');
+}
